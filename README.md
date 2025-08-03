@@ -1,3 +1,18 @@
 # Flipkart-CSAT-Classification
 
-The task in this project is to predict the CSAT(Customer Satisfaction) score of Flipkart Customer Service, where CSAT varies from one to five. This is a Supervised Learning problem involving classification. After data loading, I first performed Data Preprocessing, and then Feature Engineering and Exploratory Data Analysis. Initially, I approached the problem as a multi-class classification. Then, I found out by trial that, on simplifying the problem into binary classification by binning CSAT, the performance is improved drastically. So, I approached it as binary classification by Data Binning CSAT, a brilliant Feature Engineering move. I experimented with three algorithms: 1)Logistic Regression, 2)K-Nearest Neighbours(KNN), 3)Random Forest. For Hyper-parameter Tuning, I used Grid Search and Random Search. I Optimized the Model on Accuracy and Precision, achieving 70% accuracy and 66% precision with Random Forest. I achieved model persistence with pickle. Finally, I performed sanity check on the model, by predicting on unseen data, after loading it from pickle file. In my project, I uncovered that Response time is the most important factor in improving CSAT. This model could improve the customer approval of flipkart leading to retention and an increase in revenue.
+The task in this project is to predict the CSAT(Customer Satisfaction) score of Flipkart Customer Service, where CSAT varies from one to five. This is a Supervised Learning problem involving classification.
+
+After data loading, I first performed Data Preprocessing, and then Feature Engineering and Exploratory Data Analysis.
+
+Initially, I approached the problem as a multi-class classification. Then, I found out by trial that, on simplifying the problem into binary classification by binning CSAT, the performance is improved drastically. So, I approached it as binary classification by Data Binning CSAT, a brilliant Feature Engineering move.
+
+I experimented with three algorithms:
+1. Logistic Regression
+2. K-Nearest Neighbours(KNN)
+3. Random Forest
+
+For Hyper-parameter Tuning, I used Grid Search on Logistic Regression and KNN and Random Search on Random Forest. I Optimized the Model on Accuracy and Precision, achieving 70% accuracy and 66% precision with Random Forest.
+
+I achieved model persistence with pickle. Finally, I performed sanity check on the model, by predicting on unseen data, after loading it from pickle file.
+
+In my project, I uncovered that Response time is the most important factor in improving CSAT. This model could improve the customer approval of flipkart leading to retention and an increase in revenue.
