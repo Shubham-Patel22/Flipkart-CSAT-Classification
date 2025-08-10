@@ -11,6 +11,8 @@ I experimented with three algorithms:
 2. K-Nearest Neighbours(KNN)
 3. Random Forest
 
+For training the models, I did a split of 80% training data and 20% testing data.
+
 For Hyper-parameter Tuning, I used Grid Search on Logistic Regression and KNN and Random Search on Random Forest. I Optimized the Model on Accuracy and Precision, achieving 70% accuracy and 66% precision with Random Forest.
 
 I achieved model persistence with pickle. Finally, I performed sanity check on the model, by predicting on unseen data, after loading it from pickle file.
